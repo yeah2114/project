@@ -1,0 +1,150 @@
+html,body{
+    margin:0;
+    background:#ffffff;}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+/*font-family: 'Playfair Display', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+
+ul,li{
+    margin:0;
+    padding:0; 
+    list-style:none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0; padding:0;
+}
+
+h2{
+    font-size:30px;
+    color:#626262;
+}
+a{
+    text-decoration:none;
+}
+
+*{
+    box-sizing:border-box;
+    color:#626262;
+    
+    font: 14px 'Playfair Display', serif;
+}
+/* *로 시작하는건 모든태그에 명령, 다른 style값보다 더 강력, 먼저 적용*/
+
+/*margin*/
+.mt130{margin-top:130px !important;}
+.mt100{margin-top:100px !important;}
+.mt80{margin-top:80px !important;}
+.mt50{margin-top:50px !important;}
+.mt30{margin-top:30px !important;}
+
+/*padding*/
+.p80{padding:80px !important;}
+
+.f_center{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.f_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*font*/
+.f_s1{
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+}
+
+
+/*width*/
+.w-1060{
+    width:1060px; margin:0 auto;
+}
+
+
+/*conpont*/
+.cp_s1{}
+.cp_s1 h2{
+    margin:30px 0;
+}
+.cp_s1 h2 small{
+    display:block;
+    margin-bottom: 26px;
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform: uppercase;
+}
+.cp_s1 p{
+    line-height: 2;
+}
+.cp_s1 a{
+    display: inline-block;
+    margin-top:26px;
+    font-family: 'Ubuntu', sans-serif;
+    color:#b4ad9e;
+    text-transform: uppercase;
+}
+
+/*
+1. 반복적인 스타일을 미리 선언하고 동일한 스타일의 콘텐츠에 사용한다.
+2. 반복코드를 줄일 수 있다.
+3. 효율적인 관리 가능
+4. 페이지 저용량으로 로딩속도 개선
+
+공통적인 디자인들을 사용할때 모집하는 용도로 사용하면 좋음
+*/
+
+/*button*/
+.btn{
+    border:1px solid #626262;
+    padding:20px 40px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+/*align*/
+.center{
+    text-align:center;
+}
+
+/*
+메인페이지와 서브페이지의 공통점
+1. 상,하단
+2. 
+메인만 다를경우: 배너
+
+
+*/
+
+
+/*header*/
+header{
+    padding:70px 0;
+}
+header div{
+    width:1060px;
+    margin:0 auto;
+}
+header div h1{}
+header div nav{}
+header div nav a{
+    display:inline-block;
+    padding:0 40px;
+    text-transform: uppercase;
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+    padding:20px 0;
+    background:#f0f0f0;
+    margin-top:100px;
+}
+
