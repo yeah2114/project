@@ -1,0 +1,247 @@
+@import url(common.css);
+
+header{}
+
+header article{
+    width:90%;
+    margin: 0 auto;
+    padding:40px;
+    position: relative;
+}
+header article h1{
+    text-align: center;
+}
+header article h1 a{}
+header article h1 a img{}
+
+header article ul{
+    position: absolute;
+    right:20px; top:30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+header article ul li{
+    padding:0 10px;
+}
+header article ul li a{
+    color:#333;
+}
+
+header nav{
+    background:#333;
+    padding:20px;
+    margin: 0 auto;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    padding:0 70px;
+}
+header nav ul li a{
+    color:#fff;
+    position: relative;
+}
+header nav ul li a:after{
+    content: '';
+    width:100%;
+    height: 2px;
+    background:#fff;
+    position:absolute;
+    left:0; bottom:-10px;
+    opacity: 0;
+    transition: 1s;
+}
+header nav ul li:hover a:after{
+    opacity: 1;
+}
+
+/*=====main=====*/
+main{
+    margin: 0 auto;
+}
+.ban{
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+.ban div{    
+    position:absolute;
+}
+.ban div a{}
+.ban div a img{}
+
+.visual{
+    margin:70px auto;
+    text-align: center;
+}
+.visual strong{
+    font-size:3em;
+}
+.visual p{
+    margin:10px 0;
+}
+.visual p:after{
+    content: '';
+    clear: both;
+    display: block;
+    width:25px;
+    height: 2px;
+    background:#333;
+    margin:40px auto;
+}
+
+.list{}
+.list li{}
+.list li a{}
+.list li a figure{}
+.list li a figure img{
+    width:100%;
+}
+.list li a figure figcaption{
+    position: absolute;
+    left:0; top:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+}
+.list li:hover a figure figcaption{
+    opacity: 1;
+}
+
+.service{
+    margin:70px auto;
+    text-align:center;
+    background:#ededed;
+    padding:60px 0;
+}
+.service strong{
+    font-size:3em;
+}
+.service p{
+    margin:10px 0;
+}
+.service p:after{
+    content: '';
+    clear: both;
+    display: block;
+    width:25px;
+    height: 2px;
+    background:#333;
+    margin:40px auto;
+}
+.service ul{
+    display: flex;
+    justify-content:center;
+}
+.service ul li{
+    margin:0 30px;
+}
+.service ul li a{
+    color:#333;
+}
+.service ul li a figure{}
+.service ul li a figure img{}
+.service ul li a figure figcaption{
+    margin-top:40px;
+}
+
+.review{
+    margin:70px auto;
+    text-align:center;
+    background:#fcfcf1;
+    padding:60px 0;
+}
+.review strong{
+    font-size:3em;
+}
+.review p{
+    margin:10px 0;
+}
+.review p:after{
+    content: '';
+    clear: both;
+    display: block;
+    width:25px;
+    height: 2px;
+    background:#333;
+    margin:40px auto;
+}
+.review ul{
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+.review ul li{
+    margin:0 30px;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
+}
+.review ul li a{}
+.review ul li a figure{
+    position:relative;
+}
+.review ul li a figure img{
+    width:440px;
+    height:300px;
+}
+.review ul li a figure article{
+    background:#FF6565;
+    width:250px;
+    border-radius:100px;
+    display:flex;
+    justify-content:center;
+    padding:10px;
+    position:absolute;
+    top:270px; left:20px;
+}
+.review ul li a figure article img{
+    width:45px;
+    height:45px;
+}
+.review ul li a figure article h1{
+    margin-left:10px;
+    color:#fff;
+}
+.review ul li a figure figcaption{
+    background:#fff;
+    line-height:2;
+    white-space:pre-line;
+    width:440px;
+    height:400px;
+    text-align:left;
+    padding:50px 40px;
+    font-size:15px;
+}
+.review a{}
+/*=====footer=====*/
+footer{
+    background:#333;
+    padding:40px;
+    margin-top:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p{
+    line-height: 1.5;
+    white-space: pre-line;
+    color:#777;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    padding:0 10px;
+}
+footer ul li a{}
+footer ul li a img{}
