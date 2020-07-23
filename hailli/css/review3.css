@@ -1,0 +1,211 @@
+@import url('common-hn.css');
+
+header {
+    height: 100%;
+    background-color: white;
+
+}
+
+.hailli {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% auto;
+    overflow: hidden;
+}
+
+.hailli h1 {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #333333;
+    padding: 2.5%;
+}
+
+.gnb {
+    float: right;
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 15px;
+
+}
+
+.gnb a {
+    width: 1080px;
+    padding: 0 30px;
+    color: #333333;
+}
+
+.gnb a:hover {
+    text-decoration-line: underline;
+}
+
+.hailli nav {
+    width: 100%;
+    background: #333333;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    font-size: 20px;
+    word-spacing: 200px;
+}
+
+.hailli nav a {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+.hailli nav a:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+}
+
+.hailli nav a:hover {
+    color: white;
+}
+
+.hailli nav a:hover:after {
+   width: 100%;
+}
+
+/**********배너**********/
+.banner {
+    width: 100%; height: 150px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner p {
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #333333;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/**********본문 일반후기**********/
+.normal{
+    width: 1080px;
+    margin: 0 auto;
+}
+.list2{}
+.list2 h2{
+    line-height: 5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.list2 ul{}
+.list2 ul li{}
+.list2 ul li figure{
+    overflow: hidden;
+    margin-bottom: 15%;
+    padding: 5%; padding-bottom: 0;
+}
+.list2 ul li figure img{
+    width: 100%; height: 13vw; 
+}
+.list2 ul li figure span{
+    margin: 0 3%;
+}
+.list2 ul li figure span:nth-of-type(1){}
+.list2 ul li figure span:nth-of-type(2){
+    float: right;
+}
+.list2 ul li figure img:hover{
+    filter: brightness(110%);
+}
+
+/**********글쓰기 버튼**********/
+.button{
+    text-align: center;
+    margin: 0 auto;
+    width: 1080px;
+    overflow: hidden;
+}
+.button a{
+    float: right;
+    
+    border: 1px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: #ad74ce;
+    color: #fcfbe3;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/**********페이지 버튼**********/
+.paging{
+    text-align: center;
+    margin: 3% 0;
+}
+.paging a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    padding: 1%;
+}
+
+.paging a:hover:after,
+.paging a.active:after{
+    content: '';
+    border: 1px solid #777777;
+    width: 100%;
+    display: block;
+    color: red;
+}
+
+
+/**********풋터**********/
+footer {
+    width: 100%;
+    padding: 1%;
+    background-color: #333333;
+}
+
+.h_f {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h_f p {
+    white-space: pre-line;
+    text-align: left;
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.h_f div {
+    padding: 20px 0;
+}
+
+.h_f div a {}
+
+.h_f div a:nth-of-type(1) {}
+
+.h_f div a:nth-of-type(2) {}
