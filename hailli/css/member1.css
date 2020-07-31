@@ -1,0 +1,542 @@
+@import url(common_ys.css);
+
+main {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+.member {}
+
+.menu{display: none;}
+
+/*회원정보*/
+.info {
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+    padding: 0 50px;
+}
+
+.info h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.info form {}
+
+.edit {}
+
+.edit ul {}
+
+.edit ul li {
+    font-size: 15px;
+    padding: 7px 0;
+}
+
+.edit ul li label {
+    margin-right: 20px;
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.edit ul li span {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.edit ul li > input {
+    background: #ededed;
+    width: 50%;
+    outline-style: none;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+/*회원정보-전화번호*/
+.phone {}
+
+.phone label {}
+
+.phone select {
+    outline-style: none;
+    margin-bottom: 10px;
+    width: 12%;
+    padding: 14px 20px;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.phone select option {}
+
+.phone input {
+    outline-style: none;
+    width: 13%;
+    padding: 14px 20px;
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.phone input:nth-of-type(3) {
+    width: 10%;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    padding: 12px 20px;
+}
+
+.phone input:nth-of-type(3):hover {
+    background: #444;
+}
+
+/*취소, 저장버튼*/
+.info a {
+    display: inline-block;
+    background: #ad74ce;
+    color: #fff;
+    padding: 8px 60px;
+    border-radius: 10px;
+    transition: .5s;
+    margin-top: 40px;
+}
+
+.info a:hover {
+    background: #8953a8;
+}
+
+
+
+@media (max-width:480px) {
+    .member {
+        display: block;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        background: none;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .menu h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-right: 0px;
+        display: none;
+    }
+
+    .menu ul {
+        background: #ededed;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu ul li {}
+
+    .menu ul li a {
+        display: block;
+        font-size: 13px;
+        padding: 20px 30px;
+        position: relative;
+        color: #666;
+        transition: .7s;
+    }
+
+    .menu ul li a.active {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu ul li:hover a {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+
+
+    /*회원정보*/
+    .info {
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 0px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .edit ul li {
+        font-size: 13px;
+        padding: 3px 0;
+    }
+
+    .edit ul li label {
+        margin-right: 10px;
+        width: 77px;
+        text-align: right;
+        display: inline-block;
+        font-size:12px;
+    }
+
+    * {
+        vertical-align: middle;
+    }
+
+    .edit ul li > input {
+        background: #ededed;
+        width: 50%;
+        outline-style: none;
+        border: none;
+        font-size: 13px;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    /*회원정보-전화번호*/
+    .phone select {
+        outline-style: none;
+        margin-bottom: 0px;
+        width: 12%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input {
+        outline-style: none;
+        width: 13%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input:nth-of-type(3) {
+        width: 10%;
+        background: #666;
+        color: #fff;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+
+
+    /*취소, 저장버튼*/
+    .info a {
+        display: inline-block;
+        background: #ad74ce;
+        color: #fff;
+        padding: 8px 50px;
+        border-radius: 10px;
+        transition: .5s;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+    .member {
+        display: block;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+        background: none;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .menu h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-right: 0px;
+        display: none;
+    }
+
+    .menu ul {
+        background: #ededed;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu ul li {}
+
+    .menu ul li a {
+        display: block;
+        font-size: 15px;
+        padding: 20px 90px;
+        position: relative;
+        color: #666;
+        transition: .7s;
+    }
+
+    .menu ul li a.active {
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu ul li:hover a {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+
+    /*회원정보*/
+    .info {
+        text-align: center;
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 0px;
+    }
+
+    .info h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .edit ul li {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .edit ul li label {
+        margin-right: 15px;
+        width: 96px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    * {
+        vertical-align: middle;
+    }
+
+    .edit ul li span {
+        width: 40%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .edit ul li > input {
+        background: #ededed;
+        width: 40%;
+        outline-style: none;
+        border: none;
+        font-size: 13px;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    /*회원정보-전화번호*/
+    .phone select {
+        outline-style: none;
+        margin-bottom: 0px;
+        width: 9%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input {
+        outline-style: none;
+        width: 10%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input:nth-of-type(3) {
+        width: 10%;
+        background: #666;
+        color: #fff;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+
+
+    /*취소, 저장버튼*/
+    .info a {
+        display: inline-block;
+        background: #ad74ce;
+        color: #fff;
+        padding: 8px 60px;
+        border-radius: 10px;
+        transition: .5s;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    main {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .menu {
+        background: #ededed;
+        padding: 20px 0px;
+        text-align: right;
+        width: 20%;
+    }
+
+    .menu h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+        padding-right: 10px;
+    }
+
+    .menu ul li a {
+        display: block;
+        font-size: 15px;
+        padding: 15px 10px;
+        position: relative;
+        color: #666;
+        transition: .7s;
+    }
+
+
+
+    /*회원정보*/
+    .info {
+        text-align: center;
+        width: 80%;
+        margin: 20px auto;
+        padding: 0 0px;
+    }
+
+    .info h3 {
+        font-size: 30px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .edit ul li {
+        font-size: 15px;
+        padding: 7px 0;
+    }
+
+    .edit ul li label {
+        margin-right: 15px;
+        width: 80px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    * {
+        vertical-align: middle;
+    }
+
+    .edit ul li span {
+        width: 30%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .edit ul li > input {
+        background: #ededed;
+        width: 30%;
+        outline-style: none;
+        border: none;
+        font-size: 13px;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    /*회원정보-전화번호*/
+    .phone select {
+        outline-style: none;
+        margin-bottom: 0px;
+        width: 6%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input {
+        outline-style: none;
+        width: 8%;
+        padding: 10px 10px;
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    .phone input:nth-of-type(3) {
+        width: 7%;
+        background: #666;
+        color: #fff;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 5px;
+        font-size: 13px;
+    }
+
+
+    /*취소, 저장버튼*/
+    .info a {
+        display: inline-block;
+        background: #ad74ce;
+        color: #fff;
+        padding: 8px 60px;
+        border-radius: 10px;
+        transition: .5s;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+}
