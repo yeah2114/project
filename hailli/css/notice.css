@@ -1,0 +1,339 @@
+@import url('/css/common_ys.css');
+
+
+/**********배너**********/
+.banner {
+    background: url('../img/2-1.jpg') no-repeat #DABFAE;
+    width: ;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+
+
+/**********공지리스트**********/
+
+.notice {
+    width: 1080px;
+    margin: 60px auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table table {
+    width: 100%;
+    border-spacing: 0;
+    border-bottom: double;
+    border-color: #ededed;
+}
+
+.table thead {}
+
+.table thead th {
+    background: #ededed;
+    font-size: 15px;
+    padding: 12px;
+    color: #333;
+}
+
+.table tbody {
+    width: 100%;
+    font-size: 15px;
+}
+
+.table tbody tr {}
+
+.table tbody tr td {
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #ededed;
+    padding: 12px;
+}
+
+.table tbody tr td:nth-of-type(2) {
+    text-align: left;
+}
+
+.table tbody td a {
+    font-size: 15px;
+}
+
+
+
+
+/**********글쓰기 버튼**********/
+.button {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.button a {
+    background: #ad74ce;
+    padding: 10px 60px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    transition: .5s;
+}
+
+.button a:hover {
+    background: #8953a8;
+}
+
+
+/**********페이지 버튼**********/
+.paging {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.paging a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    padding: 0 10px;
+    transition: .5s;
+}
+
+.paging a:hover,
+.paging a.active {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    .banner {
+        background: #DABFAE;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+        color: #333;
+    }
+
+
+
+    /**********공지리스트**********/
+
+    .notice {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .table {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .table thead th {
+        background: #ededed;
+        font-size: 13px;
+        padding: 5px;
+        color: #333;
+    }
+
+    .table tbody tr td {
+        text-align: center;
+        font-size: 12px;
+        border-bottom: 1px solid #ededed;
+        padding: 5px;
+    }
+
+    .table tbody tr td:nth-of-type(1) {
+        text-align: center;
+        width: 11%;
+    }
+
+    .table tbody tr td:nth-of-type(2) {
+        text-align: left;
+        width: 45%;
+        text-overflow: ellipsis;
+    }
+
+    .table tbody tr td:nth-of-type(3) {
+        width: 15%;
+    }
+
+    .table tbody tr td:nth-of-type(5) {
+        width: 12%;
+    }
+
+    .table tbody td a {
+        font-size: 13px;
+    }
+
+    .button {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .button a {
+        font-size: 13px;
+        background: #ad74ce;
+        padding: 10px 40px;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+        transition: .5s;
+    }
+
+
+    /**********페이지 버튼**********/
+    .paging {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .paging a {
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+        padding: 0 5px;
+        margin: 0 5px;
+    }
+
+}
+
+
+
+
+@media (min-width:481px) and (max-width:768px) {
+    .banner {
+        background: #DABFAE;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+        color: #333;
+    }
+
+
+    /**********공지리스트**********/
+
+    .notice {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+
+    .table thead {}
+
+    .table thead th {
+        background: #ededed;
+        font-size: 15px;
+        padding: 10px;
+        color: #333;
+    }
+
+
+    .table tbody tr td {
+        text-align: center;
+        font-size: 15px;
+        border-bottom: 1px solid #ededed;
+        padding: 10px;
+    }
+
+    .table tbody tr td:nth-of-type(2) {
+        text-align: left;
+    }
+
+    .table tbody td a {
+        font-size: 15px;
+    }
+
+    /**********글쓰기 버튼**********/
+
+    .button {
+        text-align: right;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+
+    .button a {
+        background: #ad74ce;
+        padding: 10px 60px;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+        transition: .5s;
+        font-size: 15px;
+    }
+
+    /**********페이지 버튼**********/
+
+    .paging {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .paging a {
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+        padding: 0 10px;
+        transition: .5s;
+    }
+
+}
+
+
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    .notice {
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .button {
+        text-align: right;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+}
