@@ -1,0 +1,547 @@
+@import url('common_ys.css');
+
+/**********배너**********/
+.banner {
+    background: url('../img/2-1.jpg') no-repeat #DABFAE;
+    width: ;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+
+
+/**********본문 예약하기**********/
+.re {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.img {
+    width: 48%;
+    text-align: center;
+}
+
+.big {
+    width: 100%;
+    height: 400px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.big img {
+    width: 100%;
+}
+
+.small {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.small a {
+    width: 18%;
+    display: inline-block;
+}
+
+.small a img {
+    width: 100%;
+}
+
+.sel {
+    width: 48%;
+}
+
+.sel ul {}
+
+.sel ul li {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.sel ul li label {
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    white-space: pre-line;
+    margin-right: 20px;
+    line-height: 1;
+}
+
+.sel ul li label span {
+    font-size: 12px;
+}
+
+
+.sel ul li:nth-of-type(1) input {
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+    outline-style: none;
+    padding: 12px;
+    font-size: 15px;
+    color: #666;
+    width: 60%;
+}
+
+.sel ul li textarea {
+    border: none;
+    background: #ededed;
+    border-radius: 10px;
+    outline-style: none;
+    padding: 12px;
+    font-size: 12px;
+
+}
+
+.sel ul li:nth-of-type(9){
+    margin-top:40px;
+}
+.sel ul li:nth-of-type(9) input,
+.sel ul li:nth-of-type(10) input,
+.sel ul li:nth-of-type(11) input {
+    border: none;
+    outline-style: none;
+    /*    font-size:18px;*/
+    text-align: right;
+    width: 60%;
+}
+
+.sel ul li:nth-of-type(11) label,
+.sel ul li:nth-of-type(11) input {
+    font-size: 20px;
+}
+
+.sel ul li > * {
+    vertical-align: middle;
+}
+
+/*
+.sel ul li > span {
+    display: inline-block;
+    width: 100px;
+    margin: 0 5px;
+    text-align: right;
+    width: 150px;
+}
+
+.sel ul li > span:nth-of-type(1) {
+    margin-right: 30%;
+}
+
+.sel ul li:nth-of-type(11) > span {
+    font-size: 20px;
+}
+*/
+
+.but {
+    text-align: center;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 85px;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.button a:nth-of-type(1) {
+    color: #333333;
+    background: #ededed;
+    border-radius: 10px;
+}
+
+.button a:nth-of-type(2) {
+    color: #fff;
+    background: #ad74ce;
+    border-radius: 10px;
+}
+
+.button a:nth-of-type(1):hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.button a:nth-of-type(2):hover {
+    background: #8953a8;
+}
+
+
+
+
+/**********상세설명**********/
+.list {
+    width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list p {
+    background: #fcfbe3;
+    border-radius: 10px;
+    color: #333333;
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+.list img {
+    width: 100%;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width:480px) {
+
+    .banner {
+        background: #DABFAE;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+        color: #333;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .re {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin: 30px auto;
+    }
+
+    .img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .big {
+        width: 100%;
+        height: 275px;
+        margin: 0px;
+        display: inline-block;
+    }
+
+
+    .sel {
+        width: 100%;
+    }
+
+    .sel ul li {
+        margin: 25px 0;
+        font-size: 13px;
+    }
+
+    .sel ul li label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        white-space: normal;
+        margin-right: 0px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+
+
+    .sel ul li label span {
+        font-size: 12px;
+    }
+
+    .sel ul li > * {
+        vertical-align: middle;
+    }
+
+    .sel ul li:nth-of-type(1) input {
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        outline-style: none;
+        padding: 5px;
+        font-size: 15px;
+        color: #666;
+        width: 100%;
+    }
+
+    .sel ul li textarea {
+        border: none;
+        background: #ededed;
+        border-radius: 10px;
+        outline-style: none;
+        padding: 12px;
+        font-size: 12px;
+        width: 100%;
+
+    }
+
+
+    .sel ul li:nth-of-type(9) label,
+    .sel ul li:nth-of-type(10) label,
+    .sel ul li:nth-of-type(11) label{
+        display: inline-block;
+        width:49%;
+    }
+    
+    .sel ul li:nth-of-type(9) input,
+    .sel ul li:nth-of-type(10) input,
+    .sel ul li:nth-of-type(11) input {
+        display: inline-block;
+        border: none;
+        outline-style: none;
+        /*    font-size:18px;*/
+        text-align: right;
+        width: 49%;
+    }
+
+    .sel ul li:nth-of-type(11) label,
+    .sel ul li:nth-of-type(11) input {
+        font-size: 18px;
+    }
+
+
+    .button a {
+        display: inline-block;
+        padding: 10px 45px;
+        font-size: 13px;
+        transition: .5s;
+    }
+
+
+    .list {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .list p {
+        background: #fcfbe3;
+        border-radius: 10px;
+        color: #333333;
+        font-size: 15px;
+        padding: 12px 0;
+    }
+}
+
+
+
+@media (min-width:481px) and (max-width:768px) {
+
+
+    .banner {
+        background: #DABFAE;
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+        color: #333;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .re {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin: 30px auto;
+    }
+
+    .img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .big {
+        width: 100%;
+        height: 275px;
+        margin: 0px;
+        display: inline-block;
+    }
+
+
+    .sel {
+        width: 100%;
+    }
+
+    .sel ul li {
+        margin: 25px 0;
+        font-size: 15px;
+    }
+
+    .sel ul li label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        white-space: normal;
+        margin-right: 0px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 17px;
+    }
+
+
+
+    .sel ul li label span {
+        font-size: 12px;
+    }
+
+    .sel ul li > * {
+        vertical-align: middle;
+    }
+
+    .sel ul li:nth-of-type(1) input {
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+        outline-style: none;
+        padding: 5px;
+        font-size: 15px;
+        color: #666;
+        width: 100%;
+    }
+
+    .sel ul li textarea {
+        border: none;
+        background: #ededed;
+        border-radius: 10px;
+        outline-style: none;
+        padding: 12px;
+        font-size: 12px;
+        width: 100%;
+
+    }
+
+    .sel ul li > span {
+        display: inline-block;
+        width: 150px;
+        margin: 0 5px;
+        text-align: left;
+    }
+
+    .sel ul li > span:nth-of-type(1) {
+        margin-right: 56%;
+    }
+
+    .sel ul li > span:nth-of-type(2) {
+        text-align: right;
+    }
+
+    .sel ul li:nth-of-type(11) > span {
+        font-size: 20px;
+    }
+
+    .sel ul li:nth-of-type(9) label,
+    .sel ul li:nth-of-type(10) label,
+    .sel ul li:nth-of-type(11) label{
+        display: inline-block;
+        width:49%;
+    }
+    
+    .sel ul li:nth-of-type(9) input,
+    .sel ul li:nth-of-type(10) input,
+    .sel ul li:nth-of-type(11) input {
+        display: inline-block;
+        border: none;
+        outline-style: none;
+        /*    font-size:18px;*/
+        text-align: right;
+        width: 49%;
+    }
+
+    .sel ul li:nth-of-type(11) label,
+    .sel ul li:nth-of-type(11) input {
+        font-size: 20px;
+    }
+
+
+    
+    
+    .button a {
+        display: inline-block;
+        padding: 10px 45px;
+        font-size: 13px;
+        transition: .5s;
+    }
+
+
+    .list {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .list p {
+        background: #fcfbe3;
+        border-radius: 10px;
+        color: #333333;
+        font-size: 15px;
+        padding: 12px 0;
+    }
+
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .re {
+        width: 100%;
+        margin: 0 auto;
+        s display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 40px auto;
+    }
+
+    .sel ul li textarea {
+        border: none;
+        background: #ededed;
+        border-radius: 10px;
+        outline-style: none;
+        padding: 12px;
+        font-size: 15px;
+        width: 60%;
+
+    }
+
+    .list {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+}
