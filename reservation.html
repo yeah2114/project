@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>cafe. HAILLI </title>
+
+    <link rel="icon" href="img/favi.ico">
+
+    <link href="css/reservation.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/common.js"></script>
+
+    <script src="js/reservation.js"></script>
+</head>
+
+
+<body>
+
+    <header></header>
+
+    <div class="slide">
+        <div class="banner">
+            <h2>예약하기</h2>
+        </div>
+    </div>
+
+    <main>
+        <div class="re">
+
+            <div class="img">
+                <div class="big">
+                    <img src="img/8.jpg" alt="">
+                </div>
+                <div class="small">
+                    <a href="#"><img src="img/10.jpg"></a>
+                    <a href="#"><img src="img/5.jpg"></a>
+                    <a href="#"><img src="img/13.jpg"></a>
+                    <a href="#"><img src="img/12.jpg"></a>
+                    <a href="#"><img src="img/14.jpg"></a>
+                </div>
+            </div>
+
+            <div class="sel">
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">방문 예정일</label>
+                            <input type="datetime-local">
+                        </li>
+                        <li>
+                            <label for="">케이크 사이즈</label>
+                            <input type="checkbox" name="size" value="11000"> 미니(11,000원)
+                            <input type="checkbox" name="size" value="24000"> 1호(24,000원)
+                        </li>
+                        <li>
+                            <label for="">케이크 모양</label>
+                            <input type="checkbox" name="shape" value="0" class="box"> 원형
+                            <input type="checkbox" name="shape" value="4000" class="box"> 하트(+4,000원)
+                        </li>
+                        <li>
+                            <label for="">케이크 시트 맛</label>
+                            <input type="checkbox" name="cake_taste" value="0" class="box"> 바닐라(기본)
+                            <input type="checkbox" name="cake_taste" value="0" class="box"> 초코
+                            <input type="checkbox" name="cake_taste" value="0" class="box"> 오레오
+                            <input type="checkbox" name="cake_taste" value="0 Grey" class="box"> 얼그레이
+                        </li>
+                        <li>
+                            <label for="">생크림 모양</label>
+                            <input type="checkbox" name="cream_shape" value="0" class="box"> 기본
+                            <input type="checkbox" name="cream_shape" value="0" class="box"> 쉘
+                            <input type="checkbox" name="cream_shape" value="1000" class="box"> 리본(+1,000원)
+                            <input type="checkbox" name="cream_shape" value="3000" class="box"> 꽃(3,000원)
+                        </li>
+                        <li>
+                            <label for="">케이크 문구</label>
+                            <input type="text" name="caketxt" placeholder="최대 15글자까지 가능합니다.">             
+                        </li>
+                        <li>
+                            <label for="">추가옵션
+                                <span>(전체 색상 변경 & 생크림 모양)</span></label>
+                            <input type="checkbox" name="option" value="0" class="box"
+                            id="ok"> 색상변경(요청사항 메모)
+                            <input type="checkbox" name="option" value="0" class="box"> 옵션선택X
+                        </li>
+                        <li>
+                            <label for="">요청사항</label>
+                            <input type="text" name="optxt" placeholder="내용을 입력해주세요.">
+                        </li>
+                        <li>
+                            <label>상품금액</label>
+                            <input type="text" class="gw" placeholder="0원">
+                        </li>
+                        <li>
+                            <label>옵션</label>
+                            <input class="op" type="text" placeholder="0원">
+                        </li>
+                        <li>
+                            <label><strong>총 결제금액</strong></label>
+                            <input class="sum" type="text" placeholder="0원">
+                        </li>
+                    </ul>
+                </form>
+                <!-----버튼----->
+                <div class="but">
+                    <div class="button">
+                        <a href="reservation_ok.html" id="cart">장바구니</a>
+                        <a href="pay.html" id="pay">예약하기</a>
+                    </div>
+                </div>
+                <!-----버튼 끝----->
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+        <!-----상세설명시작----->
+
+
+        <div class="list">
+            <p>제품 상세 설명</p>
+            <img src="img/list.jpg">
+        </div>
+
+
+        <!-----상세설명 끝----->
+        
+        
+        
+        
+        <!--맨위로 보내기 보내기-->
+        <aside>
+            <img src="img/icon_top.png" alt="top">
+        </aside>
+        
+    </main>
+
+
+
+    <footer></footer>
+
+
+</body>
+
+</html>
